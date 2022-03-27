@@ -80,3 +80,6 @@ while turns > 0:
         print('CONGRATULATIONS! YOU HAVE SUNK ALL THE BATTLESHIPS!')
         break
     print('You have ' + str(turns) + ' turns remaining')
+    if turns == 0:
+        print('GAME OVER! you have 0 turns left to guess')
+        break
