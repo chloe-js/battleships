@@ -63,5 +63,3 @@ turn = 10
 print_board(HIDDEN_BOARD)
 print_board(GUESS_BOARD)
 # while turns > 0:
-
-# create 5 ships on the baard we cannot see use print board to see what we have created so far
