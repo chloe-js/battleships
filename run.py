@@ -22,3 +22,10 @@ def get_ship_loction():
     Ask user what row and colomn they want to choose to find the ship
     '''
     pass
+
+def count_hit_ships():
+    '''
+    Count every time the user hits a ship. 
+    When you hit all 5 the game is over.
+    '''
+    pass   
