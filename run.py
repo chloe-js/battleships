@@ -1,6 +1,5 @@
 from random import randint
 
-'import randint for random fuction to select a random locartion for ship'
 
 HIDDEN_BOARD = [[' '] * 8 for x in range(8)]
 GUESS_BOARD = [[' '] * 8 for x in range(8)]
