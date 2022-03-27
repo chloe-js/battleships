@@ -46,6 +46,8 @@ def get_ship_loction():
         column = input('Enter ship column A-H').upper()
     return int(row) - 1, letters_to_numbers[column]
 
+# user can still input no andswer and it will accept nothing as a turn if entered
+
 def count_hit_ships(board):
     '''
     Count every time the user hits a ship. 
@@ -60,6 +62,9 @@ def count_hit_ships(board):
 
 create_ships(HIDDEN_BOARD)
 turn = 10
-print_board(HIDDEN_BOARD)
-print_board(GUESS_BOARD)
-# while turns > 0:
+while turns > 0:
+    print('WELCOME TO BATTLESHIP')
+    print_board(GUESS_BOARD)
+    row, column = get_ship_location()
+    if GUESS_BOARD[row][column] == '-':
+        print('You already guessed that')
