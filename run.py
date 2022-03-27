@@ -72,3 +72,7 @@ while turns > 0:
         print('DIRECT HIT! you sunk a battleship')
         GUESS_BOARD[row][column] = 'X'
         turns -= 1
+    else:
+        print('Sorry, you missed')
+        GUESS_BOARD[row][column] = '-'
+        turns -= 1
