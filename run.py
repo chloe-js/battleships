@@ -21,11 +21,12 @@ def create_ships():
     '''
     Random hidden ships for user to find
     '''
-    pass
+    for ship in range(5):
+        ship_row, ship_column = randint(0,7), randint(0,7)
 
 def get_ship_loction():
     '''
-    Ask user what row and colomn they want to choose to find the ship
+    Ask user what row and column they want to choose to find the ship
     '''
     pass
 
