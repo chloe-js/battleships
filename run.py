@@ -58,6 +58,10 @@ def count_hit_ships(board):
                 count += 1
     return count
 
-create_ships()
+create_ships(HIDDEN_BOARD)
 turn = 10
+print_board(HIDDEN_BOARD)
+print_board(GUESS_BOARD)
 # while turns > 0:
+
+# create 5 ships on the baard we cannot see use print board to see what we have created so far
