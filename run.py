@@ -29,3 +29,7 @@ def count_hit_ships():
     When you hit all 5 the game is over.
     '''
     pass   
+
+create_ships()
+turn = 10
+# while turns > 0:
