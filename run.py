@@ -1,7 +1,7 @@
 # Legend
 # X is for placing a ship and a hit battleship 
 # ' ' is for available space
-# '-' is for a missed shot
+# '0' is for a missed shot
 
 from random import randint
 
@@ -36,14 +36,14 @@ def get_ship_loction():
     '''
     Ask user what row and column they want to choose to find the ship
     '''
-    row = input('Enter ship row 1-8:  ')
+    row = input('Enter ship row 1-8: ')
     while row not in '12345678':
         print('Please enter a valid row')
-        row = input('Enter ship row 1-8:  ')
-    column = input('Enter ship column A-H:  ').upper()
+        row = input('Enter ship row 1-8: ')
+    column = input('Enter ship column A-H: ').upper()
     while column not in 'ABCDEFGH':
         print('Please enter a valid column')
-        column = input('Enter ship column A-H:  ').upper()
+        column = input('Enter ship column A-H: ').upper()
     return int(row) - 1, letters_to_numbers[column]
 
 # user can still input no andswer and it will accept nothing as a turn if entered
@@ -61,16 +61,12 @@ def count_hit_ships(board):
     return count
 
 create_ships(HIDDEN_BOARD)
-print_board(HIDDEN_BOARD)
-# print hidden board to test if game works
-# turns = 10
-turns = 6
-# test running out of turns
+turns = 10
 while turns > 0:
     print('WELCOME TO BATTLESHIP')
     print_board(GUESS_BOARD)
     row, column = get_ship_loction()
-    if GUESS_BOARD[row][column] == '-':
+    if GUESS_BOARD[row][column] == '0':
         print('You already guessed that')
     elif HIDDEN_BOARD[row][column] == 'X':
         print('DIRECT HIT! you sunk a battleship')
@@ -78,7 +74,7 @@ while turns > 0:
         turns -= 1
     else:
         print('Sorry, YOU MISSED!')
-        GUESS_BOARD[row][column] = '-'
+        GUESS_BOARD[row][column] = '0'
         turns -= 1
     if count_hit_ships(GUESS_BOARD) == 5:
         print('CONGRATULATIONS! YOU HAVE SUNK ALL THE BATTLESHIPS!')
