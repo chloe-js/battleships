@@ -46,12 +46,17 @@ def get_ship_loction():
         column = input('Enter ship column A-H').upper()
     return int(row) - 1, letters_to_numbers[column]
 
-def count_hit_ships():
+def count_hit_ships(board):
     '''
     Count every time the user hits a ship. 
     When you hit all 5 the game is over.
     '''
-    pass   
+    count = 0
+    for row in board:
+        for column in row:
+            if column == 'X':
+                count += 1
+    return count
 
 create_ships()
 turn = 10
