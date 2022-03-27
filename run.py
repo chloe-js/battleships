@@ -1,3 +1,8 @@
+# Legend
+# X is for placing a ship and a hit battleship 
+# ' ' is for available space
+# '-' is for a missed shot
+
 from random import randint
 
 
@@ -23,6 +28,8 @@ def create_ships():
     '''
     for ship in range(5):
         ship_row, ship_column = randint(0,7), randint(0,7)
+        while board[ship_row][ship_column] == 'X':
+
 
 def get_ship_loction():
     '''
