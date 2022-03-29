@@ -13,8 +13,41 @@ here iss a live version of the Python terminal game Battleship: **here iss a liv
 
 ## How to Play
 
+## Features
+### Exisiting Features
+* 
+** 
+
+## Data Model
 
 
+## Testing
+
+## Bugs
+If a user inputs nothing and enters their row and column no input error arrises but after the input returns an error displayed in the terminal
+
+## Validator Testing
+* PEP8
+**
+
+## Deployment
+This project was deplyed using Code Institue's mock terminal fo rHeroku.
+
+* Steps for deployment:
+
+** Clone the repository 
+** Create a new Heroku app
+** Set the buildbacks to Python and NodeJS in that order
+** Link the Heroku appto the repository
+** Click on Deploy
+
+## Credits 
+* Code Institue for the deployment terminal
+* Code Institue 'Sample README.md file' 
+//**  https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/ ***////
+* Wikipedia for details of the Battleship game
+* 'guachilimbo' an examply of Python code of Battleship played in the terminal
+///// **** https://github.com/guachilimbo/battleship/blob/main/Battleship.py   ****//////
 
 
 
