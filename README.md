@@ -1,10 +1,24 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome chloë js,
+#BATTLESHIP
+This Battleship game is a Python terminal Game, which runs in the Code Institutemock terminal on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Users can try and beat the computer by finding the computers hidden battleship before their shot(turns) have run out.
+Each battleship occupies one(-) on the board. The user selcts a row number and column letter to target their shot.
+A direct hit destroys 1 of 5 Battleships and and a turn is taken. If they miss they they still loose a turn and a chance to win the game.
+when all 5 ships have sunk the user will win the game.
 
-## Reminders
+here iss a live version of the Python terminal game Battleship: **here iss a live version pf my project**
+//insert multi device image of code //
+
+## How to Play
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
 
 * Your code must be placed in the `run.py` file
 * Your dependencies must be placed in the `requirements.txt` file
