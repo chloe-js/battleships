@@ -71,7 +71,7 @@ def count_hit_ships(board):
 create_ships(HIDDEN_BOARD)
 turns = 10
 while turns > 0:
-    print('WELCOME TO BATTLESHIP')
+    print('WELCOME TO BATTLESHIPS')
     print_board(GUESS_BOARD)
     (row, column) = get_ship_loction()
     if GUESS_BOARD[row][column] == '0':
