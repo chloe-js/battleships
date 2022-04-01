@@ -55,7 +55,6 @@ def get_ship_loction():
     return (int(row) - 1, letters_to_numbers[column])
 
 
-# user can still input no andswer and it will accept nothing
 def count_hit_ships(board):
     '''
     Count every time the user hits a ship.
