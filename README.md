@@ -12,7 +12,8 @@ A direct hit destroys 1 of 5 Battleships and a turn is taken. If they miss they 
 when all 5 ships have sunk the user will win the game.
 
 Here is a live version of the Python terminal game Battleship: 
-**here is a live version of my project**
+
+**Here is a live version of my project**
 
 - (https://battleships-chloe-jayne.herokuapp.com/)
 
@@ -71,7 +72,7 @@ The challenge is that they only have a limited amount of turns in order to find 
 * Board Generation
   * 5 random computer selected ship locations are marked on a hidden board
   * The user will use one turn to guess where they are by selecting a number and letter
-  * each guess they make deducts a turn from their total amount of turns, 10
+  * Each guess they make deducts a turn from their total amount of turns, 10
 
 ![Opening blank board](./assets/images/welcom-to-battleships.jpg)
 
@@ -91,7 +92,7 @@ The challenge is that they only have a limited amount of turns in order to find 
 ### Further Features
 * Chose how many turns available
 * Chose how many ships are hidden
-* have ships larger than 1 block
+* Have ships larger than 1 block
 
 # Testing
 I have manually tested this project by doing the following:
@@ -99,7 +100,7 @@ I have manually tested this project by doing the following:
 * Given invalid inputs: strings instead of integers, multiple inputs instead of single, out of bound inputs, and the same input twice.
 * Tested in my local terminal and the Code Institute Heroku terminal
 ## Validator Testing
-* PEP8
+* PEP8 online
 
 ![PEP8 Validator testing with 16 errors](./assets/images/PEP8-results-16.jpg)
 
