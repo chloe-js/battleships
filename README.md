@@ -1,6 +1,5 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 #BATTLESHIP
+![Image of Battleships Welcom to Game](./assets/images/welcom-to-battleships.jpg)
 This Battleship game is a Python terminal Game, which runs in the Code Institutemock terminal on Heroku.
 
 Users can try and beat the computer by finding the computers hidden battleship before their shot(turns) have run out.
@@ -18,10 +17,12 @@ here iss a live version of the Python terminal game Battleship: **here iss a liv
 * 
 ** 
 
-## Data Model
-
-
 ## Testing
+![PEP8 Validator testing with 16 errors](./assets/images/PEP8-results-16.jpg)
+
+
+![PEP8 Validator testing with 0 errors](./assets/images/PEP8-results-0.jpg)
+
 
 ## Bugs
 If a user inputs nothing and enters their row and column no input error arrises but after the input returns an error displayed in the terminal
