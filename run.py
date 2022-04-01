@@ -1,15 +1,21 @@
 # Legend
-# X is for placing a ship and a hit battleship 
+# X is for placing a ship and a hit battleship
 # ' ' is for available space
 # '0' is for a missed shot
-
 from random import randint
-
-
 HIDDEN_BOARD = [[' '] * 8 for x in range(8)]
 GUESS_BOARD = [[' '] * 8 for x in range(8)]
+letters_to_numbers = {
+    'A': 0,
+    'B': 1,
+    'C': 2,
+    'D': 3,
+    'E': 4,
+    'F': 5,
+    'G': 6,
+    'H': 7,
+    }
 
-letters_to_numbers = {'A': 0, 'B': 1, 'C': 2,'D': 3, 'E': 4, 'F': 5,'G': 6, 'H': 7}
 
 def print_board(board):
     '''
@@ -19,18 +25,20 @@ def print_board(board):
     print('  ---------------')
     row_number = 1
     for row in board:
-        print("%d|%s|" % (row_number, "|".join(row)))
+        print('%d|%s|' % (row_number, '|'.join(row)))
         row_number += 1
-    
+
+
 def create_ships(board):
     '''
     Random hidden ships for user to find
     '''
     for ship in range(5):
-        ship_row, ship_column = randint(0,7), randint(0,7)
+        (ship_row, ship_column) = (randint(0, 7), randint(0, 7))
         while board[ship_row][ship_column] == 'X':
-            ship_row, ship_column = randint(0,7), randint(0,7)
+            (ship_row, ship_column) = (randint(0, 7), randint(0, 7))
         board[ship_row][ship_column] = 'X'
+
 
 def get_ship_loction():
     '''
@@ -44,13 +52,13 @@ def get_ship_loction():
     while column not in 'ABCDEFGH':
         print('Please enter a valid column')
         column = input('Enter ship column A-H: ').upper()
-    return int(row) - 1, letters_to_numbers[column]
+    return (int(row) - 1, letters_to_numbers[column])
 
-# user can still input no andswer and it will accept nothing as a turn if entered
 
+# user can still input no andswer and it will accept nothing
 def count_hit_ships(board):
     '''
-    Count every time the user hits a ship. 
+    Count every time the user hits a ship.
     When you hit all 5 the game is over.
     '''
     count = 0
@@ -60,12 +68,13 @@ def count_hit_ships(board):
                 count += 1
     return count
 
+
 create_ships(HIDDEN_BOARD)
 turns = 10
 while turns > 0:
     print('WELCOME TO BATTLESHIP')
     print_board(GUESS_BOARD)
-    row, column = get_ship_loction()
+    (row, column) = get_ship_loction()
     if GUESS_BOARD[row][column] == '0':
         print('You already guessed that')
     elif HIDDEN_BOARD[row][column] == 'X':
