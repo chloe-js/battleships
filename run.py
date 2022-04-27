@@ -48,8 +48,8 @@ def get_ship_loction():
     while row not in '12345678' == "":
         print('Please enter a valid row')
         row = input('Enter ship row 1-8: \n')
-    column = input('Enter ship column A-H: ').upper()
-    while column not in 'ABCDEFGH':
+    column = input('Enter ship column A-H: ').upper().strip()
+    while column not in 'ABCDEFGH' == "":
         print('Please enter a valid column')
         column = input('Enter ship column A-H: ').upper()
     return (int(row) - 1, letters_to_numbers[column])
