@@ -44,8 +44,8 @@ def get_ship_loction():
     '''
     Ask user what row and column they want to choose to find the ship
     '''
-    row = input('Enter ship row 1-8: ')
-    while row not in '12345678':
+    row = input('Enter ship row 1-8: ').strip()
+    while row not in '12345678' == "":
         print('Please enter a valid row')
         row = input('Enter ship row 1-8: \n')
     column = input('Enter ship column A-H: ').upper()
