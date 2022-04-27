@@ -45,13 +45,13 @@ def get_ship_loction():
     Ask user what row and column they want to choose to find the ship
     '''
     row = input('Enter ship row 1-8: ').strip()
-    while row not in '12345678' == "":
+    while row not in '12345678' or row == "":
         print('Please enter a valid row')
         row = input('Enter ship row 1-8: \n')
     column = input('Enter ship column A-H: ').upper().strip()
-    while column not in 'ABCDEFGH' == "":
+    while column not in 'ABCDEFGH' or column == "":
         print('Please enter a valid column')
-        column = input('Enter ship column A-H: ').upper()
+        column = input('Enter ship column A-H: ').upper().strip()
     return (int(row) - 1, letters_to_numbers[column])
 
 
