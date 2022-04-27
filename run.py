@@ -68,26 +68,29 @@ def count_hit_ships(board):
     return count
 
 
-create_ships(HIDDEN_BOARD)
-turns = 10
-while turns > 0:
-    print('WELCOME TO BATTLESHIPS')
-    print_board(GUESS_BOARD)
-    (row, column) = get_ship_loction()
-    if GUESS_BOARD[row][column] == '0':
-        print('\n You already guessed that \n')
-    elif HIDDEN_BOARD[row][column] == 'X':
-        print('\n DIRECT HIT! you sunk a battleship \n')
-        GUESS_BOARD[row][column] = 'X'
-        turns -= 1
-    else:
-        print('\n Sorry, YOU MISSED! \n')
-        GUESS_BOARD[row][column] = '0'
-        turns -= 1
-    if count_hit_ships(GUESS_BOARD) == 5:
-        print('\n CONGRATULATIONS! YOU HAVE SUNK ALL THE BATTLESHIPS! \n')
-        break
-    print('You have ' + str(turns) + ' turns remaining \n')
-    if turns == 0:
-        print('\n GAME OVER! you have 0 turns left remaining \n')
-        break
+def main():
+    create_ships(HIDDEN_BOARD)
+    turns = 10
+    while turns > 0:
+        print('WELCOME TO BATTLESHIPS')
+        print_board(GUESS_BOARD)
+        (row, column) = get_ship_loction()
+        if GUESS_BOARD[row][column] == '0':
+            print('\n You already guessed that \n')
+        elif HIDDEN_BOARD[row][column] == 'X':
+            print('\n DIRECT HIT! you sunk a battleship \n')
+            GUESS_BOARD[row][column] = 'X'
+            turns -= 1
+        else:
+            print('\n Sorry, YOU MISSED! \n')
+            GUESS_BOARD[row][column] = '0'
+            turns -= 1
+        if count_hit_ships(GUESS_BOARD) == 5:
+            print('\n CONGRATULATIONS! YOU HAVE SUNK ALL THE BATTLESHIPS! \n')
+            break
+        print('You have ' + str(turns) + ' turns remaining \n')
+        if turns == 0:
+            print('\n GAME OVER! you have 0 turns left remaining \n')
+            break
+if __name__ == "__main__":
+    main()
