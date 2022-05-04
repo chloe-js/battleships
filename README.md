@@ -15,7 +15,7 @@ Here is a live version of the Python terminal game Battleship:
 
 **Here is a live version of my project**
 
-- (https://battleships-chloe-jayne.herokuapp.com/)
+- https://battleships-chloe-js.herokuapp.com/
 
 ![Battleships Multi devices](./assets/images/multi-device.jpg)
 
