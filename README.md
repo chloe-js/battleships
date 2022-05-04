@@ -59,11 +59,11 @@ The challenge is that they only have a limited amount of turns in order to find 
 
 
 ## User Story Testing
-* While testing if the games works, I chose to print() the hidden board so that I could see exactly where the computer had randomly selected to put the battleships.
+* While testing if the game works, I chose to print() the hidden board so that I could see exactly where the computer had randomly selected to put the battleships.
 
 ![Testing if the game works with showing a Hidden board](./assets/images/test-game-show-hidden.jpg)
 
-* When selecting the row and number for the co-ordinate of the attack we need to create a while, not in a statement to specify that only the numbers and letters in this range can be chosen otherwise the code cannot run because of the location would not exist.
+* When selecting the row and number for the co-ordinate of the attack we need to create a while, not in a statement to specify that only the numbers and letters in this range can be chosen otherwise the code cannot run because the location would not exist.
 * We also need to ensure that if the same location is input that it does not deduct a turn twice and the user is prompted to choose a different location.
 * We need to create a limit on how many times the user can guess on the hidden board by giving the user only 10 turns to guess the location.
 * The game will end when all 5 ships have been found or all 10 turns have been used.
@@ -72,7 +72,7 @@ The challenge is that they only have a limited amount of turns in order to find 
 * Board Generation
   * 5 random computer selected ship locations are marked on a hidden board
   * The user will use one turn to guess where they are by selecting a number and letter
-  * Each guess they make deducts a turn from their total amount of turns, 10
+  * Each guesses they make deducts a turn from their total amount of turns, 10
 
 ![Opening blank board](./assets/images/welcom-to-battleships.jpg)
 
@@ -94,15 +94,15 @@ The challenge is that they only have a limited amount of turns in order to find 
 
 ![Crashed after inputting no input](./assets/images/crash-validation.jpg)
 
-* An error occured after submition where if no input was selcted the program ran until both the row and column were invalid inputs. This cause the program to crash.
-* I then added in a further validation of .strip() to my get_ship_loction function to ensure that if nothing is input then an error occurs and a request to input a valid row or number is prompted.
+* An error occurred after submission where if no input was selected the program ran until both the row and column were invalid inputs. This caused the program to crash.
+* I then added further validation of .strip() to my get_ship_loction function to ensure that if nothing is input then an error occurs and a request to input a valid row or number is prompted.
 
 ![invalid input try again](./assets/images/validation-correstion.jpg)
 
 * I also imported the 'random' library to input the randint range of numbers for 'my create_ships(board)' function in order for there to be randomly selected ships hidden for each new game started.
 
 ### Further Features
-* Chose how many turns available
+* Chose how many turns were available
 * Chose how many ships are hidden
 * Have ships larger than 1 block
 
@@ -111,7 +111,7 @@ I have manually tested this project by doing the following:
 * Passing the run.py file through a PEP8 linter and confirmed there are now no problems.
 * Given invalid inputs: strings instead of integers, multiple inputs instead of single, out of bound inputs, and the same input twice.
 * Tested in my local terminal and the Code Institute Heroku terminal
-* Revised, I have also done peer testing with friend to see if there are any further errors.
+* Revised, I have also done peer testing with friends to see if there are any further errors.
 ## Validator Testing
 * PEP8 online
 
@@ -129,9 +129,9 @@ I have manually tested this project by doing the following:
   * No errors were returned from PEP8online.com
 ## Bugs
 * When I wrote the code, I had a lot of errors with white space because I could not see it when looking through my code, but when I put it through the PEP8 validator I was able to find them
-* If a user inputs nothing and enters their row and column no input error arrises but after the input returns an error is displayed in the terminal. 
-* REVISED, this error of a blank input being entered has now been corrected with adding the .STRIP() funtion.
-This now does not allow any black input and the while loops of numbers 1-8 and letters of A-H, forces the user to input only the options given in the battlefield. 
+* If a user inputs nothing (empty string) and enters an empty row and column. no input errors but after both blank inputs, the input returns an error is displayed in the terminal. after the program has crashed. 
+* REVISED, this error of a blank input being entered has now been corrected with adding the.STRIP() function.
+This now does not allow any black input and the while loops of numbers 1-8 and letters of A-H, force the user to input only the options given in the battlefield. 
 
 ## Constraints
 
