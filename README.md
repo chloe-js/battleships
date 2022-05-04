@@ -95,7 +95,7 @@ The challenge is that they only have a limited amount of turns in order to find 
 ![Crashed after inputting no input](./assets/images/crash-validation.jpg)
 
 * An error occured after submition where if no input was selcted the program ran until both the row and column were invalid inputs. This cause the program to crash.
-* I then added in a further validation of .split() to my get_ship_loction function to ensure that if nothing is input then an error occurs and a request to input a valid row or number is prompted.
+* I then added in a further validation of .strip() to my get_ship_loction function to ensure that if nothing is input then an error occurs and a request to input a valid row or number is prompted.
 
 ![invalid input try again](./assets/images/validation-correstion.jpg)
 
@@ -109,6 +109,7 @@ I have manually tested this project by doing the following:
 * Passing the run.py file through a PEP8 linter and confirmed there are now no problems.
 * Given invalid inputs: strings instead of integers, multiple inputs instead of single, out of bound inputs, and the same input twice.
 * Tested in my local terminal and the Code Institute Heroku terminal
+* Revised, I have also done peer testing with friend to see if there are any further errors.
 ## Validator Testing
 * PEP8 online
 
@@ -126,7 +127,9 @@ I have manually tested this project by doing the following:
   * No errors were returned from PEP8online.com
 ## Bugs
 * When I wrote the code, I had a lot of errors with white space because I could not see it when looking through my code, but when I put it through the PEP8 validator I was able to find them
-* If a user inputs nothing and enters their row and column no input error arrises but after the input returns an error is displayed in the terminal
+* If a user inputs nothing and enters their row and column no input error arrises but after the input returns an error is displayed in the terminal. 
+* REVISED, this error of a blank input being entered has now been corrected with adding the .STRIP() funtion.
+This now does not allow any black input and the while loops of numbers 1-8 and letters of A-H, forces the user to input only the options given in the battlefield. 
 
 ## Constraints
 
