@@ -99,6 +99,8 @@ The challenge is that they only have a limited amount of turns in order to find 
 
 ![invalid input try again](./assets/images/validation-correstion.jpg)
 
+* I also imported the 'random' library to input the randint range of numbers for 'my create_ships(board)' function in order for there to be randomly selected ships hidden for each new game started.
+
 ### Further Features
 * Chose how many turns available
 * Chose how many ships are hidden
