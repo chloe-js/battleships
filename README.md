@@ -13,7 +13,7 @@ when all 5 ships have sunk the user will win the game.
 
 Here is a live version of the Python terminal game Battleship: 
 
-**Here is a live version of my project**
+**Here is a live REVISED version of my project**
 
 - https://battleships-chloe-js.herokuapp.com/
 
@@ -88,7 +88,17 @@ The challenge is that they only have a limited amount of turns in order to find 
 * The inputs are then marked on the board with an 'X' and missed hits are marked with a '0'
 * If all 5 ships are found before the user 10 turns have been used, the user is the winner
 
-![Input previously used](./assets/images/winner.jpg)
+![Congratulations you are a winner](./assets/images/winner.jpg)
+
+### Added Validtation for no input, REVISED
+
+![Crashed after inputting no input](./assets/images/crash-validation.jpg)
+
+* An error occured after submition where if no input was selcted the program ran until both the row and column were invalid inputs. This cause the program to crash.
+* I then added in a further validation of .split() to my get_ship_loction function to ensure that if nothing is input then an error occurs and a request to input a valid row or number is prompted.
+
+![invalid input try again](./assets/images/validation-correstion.jpg)
+
 ### Further Features
 * Chose how many turns available
 * Chose how many ships are hidden
