@@ -130,8 +130,8 @@ I have manually tested this project by doing the following:
 ## Bugs
 * When I wrote the code, I had a lot of errors with white space because I could not see it when looking through my code, but when I put it through the PEP8 validator I was able to find them
 * If a user inputs nothing (empty string) and enters an empty row and column. no input errors but after both blank inputs, the input returns an error is displayed in the terminal. after the program has crashed. 
-* REVISED, this error of a blank input being entered has now been corrected with adding the.STRIP() function.
-This now does not allow any black input and the while loops of numbers 1-8 and letters of A-H, force the user to input only the options given in the battlefield. 
+  * REVISED, this error of a blank input being entered has now been corrected with adding the.STRIP() function.
+  This now does not allow any black input and the while loops of numbers 1-8 and letters of A-H, force the user to input only the options given in the battlefield. 
 
 ## Constraints
 
@@ -153,6 +153,14 @@ You must then create a _Config Var_ called `PORT`. Set this to `8000`
   * Set the build back to Python and NodeJS in that order
   * Link the Heroku app to the repository
   * Click on Deploy
+
+## Technologies Used
+
+This project will primarily be made up of Python and Heroku.
+
+Python: We used Python as the tool for developing the back-end web application, Battleships.  
+
+Heroku: Heroku is a cloud application platform that made it easy to develop our web applications written in Python. It provids a scalable runtime and a rich set of tools that we can implement our project in less time and with less risk.
 
 ## Credits
 * Code Institue for the deployment terminal
